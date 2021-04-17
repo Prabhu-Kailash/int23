@@ -1,5 +1,3 @@
-console.log("Hello World")
-
 let button = document.querySelector("#copy");
 let button2 = document.querySelector("#copy_btn");
 
