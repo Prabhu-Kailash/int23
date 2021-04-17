@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <title>parseInt('23')</title>
+    <link rel="stylesheet" href="OpenSans-Regular.ttf" type="text">
+   <style>
+
+        html body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            width: 348 px;
+            min-height: 180px;
+        }
+        .offscreen {
+            position: absolute;
+            left: -999em;
+        }
+
+        img {
+            width: 80px;
+
+        }
+
+        h1 {
+            align-items: center;
+            font-family: 'Menlo', monospace;
+            font-size: 15px;
+            font-weight: 200;
+            margin: 0;
+            color: #2f5876;
+
+        }
+
+        .modal-content {
+            padding-top: 12px;
+            align-items: center;
+        }
+
+        .version{
+            color: #444;
+            font-size: 11px;
+        }
+        .flex-container{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 22px;
+            padding-right: 12px;
+        }
+        .flex{
+            opacity: 1;
+            transition: opacity 0.2s ease-in-out;
+            width: 120px;
+            align-items: center;
+            padding-right: 25px;
+        }
+
+        .flex:hover{
+            align-items: center;
+            opacity: 0.4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="modal-header">
+        <h1 class="logo">
+            <img src="unnamed.png" alt="parseInt('23')" class="logo-icon">
+            new String(23)<span class="version">v0.23</span>  
+        </h1>
+    </div>
+    <div class="modal-content">
+        <p>EDM Forger</p>
+    </div>
+    <div class="flex-container">
+        <div class="flex">
+        
+            <button type="button" id="copy_btn" class="btn btn-success">Forge it!</button>
+  
+        </div>
+        <div class="flex">
+            <button type="button" id="copy" class="btn btn-success">Replicate</button>
+            
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

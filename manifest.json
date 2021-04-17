@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "int23",
+  "version": "1.1",
+  "description": "B2B Friendly application",
+
+  "background":{
+    "scripts": ["background.js"]
+  },
+  
+  "content_scripts":[
+    {
+      "matches":[
+        "servicenow site here*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons":{
+    "128": "icon128.png",
+    "48": "icon48.png",
+    "16": "icon16.png"
+    },
+
+    "browser_action":{
+      "default_icon": "icon16.png",
+      "default_popup": "popup.html",
+      "default_title": "B2B - EDM Helper"
+    }
+}
