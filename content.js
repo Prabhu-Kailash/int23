@@ -11,8 +11,6 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         if (document.readyState == "interactive" || document.readyState == "complete") {
 
 
-            console.log("Its running in LFG SNOW")
-
             let theIframe = document.getElementById("gsft_main")
 
             let text = theIframe.contentWindow.document.querySelectorAll(".question_textarea_input")[5].value
@@ -37,10 +35,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 
             let dig = contentnew.map(v => v.toLowerCase());
 
-            // console.log(dig)
             let b = dig.filter(s => s.includes(string.toLowerCase())).toString()
-
-            // console.log(b)
 
             let index = dig.indexOf(b)
 
